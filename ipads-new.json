@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ipad001",
+    "name": "iPad Pro 12.9\" جديد",
+    "desc": "ايباد جديد مع شاشة Liquid Retina كبيرة وكاميرا متطورة",
+    "price": "2,500,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad002",
+    "name": "iPad Air 5 جديد",
+    "desc": "ايباد خفيف وقوي مع معالج M1 ويدعم Apple Pencil",
+    "price": "1,800,000 IQD",
+    "color": "أزرق سماوي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad003",
+    "name": "iPad Mini 6 جديد",
+    "desc": "ايباد صغير الحجم مع شاشة ممتازة وكاميرا جيدة",
+    "price": "1,200,000 IQD",
+    "color": "بنفسجي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad004",
+    "name": "iPad 10.2\" 2023 جديد",
+    "desc": "ايباد قياسي بحجم 10.2 بوصة مع دعم لوحة المفاتيح",
+    "price": "1,000,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad005",
+    "name": "iPad Pro 11\" جديد",
+    "desc": "ايباد برو 11 مع شاشة Liquid Retina وكاميرا ممتازة",
+    "price": "2,200,000 IQD",
+    "color": "رمادي فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad006",
+    "name": "iPad Air 4 جديد",
+    "desc": "ايباد اير 4 قوي وخفيف مع معالج A14 Bionic",
+    "price": "1,600,000 IQD",
+    "color": "أخضر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad007",
+    "name": "iPad Mini 5 جديد",
+    "desc": "ايباد ميني 5 بحالة ممتازة وشاشة Retina",
+    "price": "900,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad008",
+    "name": "iPad 9.7\" جديد",
+    "desc": "ايباد تقليدي مع شاشة 9.7 بوصة وكاميرا خلفية جيدة",
+    "price": "800,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad009",
+    "name": "iPad Pro 12.9\" M2 جديد",
+    "desc": "ايباد برو مع معالج M2 وكاميرات محسّنة لشاشات كبيرة",
+    "price": "2,800,000 IQD",
+    "color": "رمادي داكن",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "ipad010",
+    "name": "iPad Air 5 256GB جديد",
+    "desc": "ايباد اير 5 بسعة تخزين 256 جيجا، يدعم Apple Pencil",
+    "price": "2,000,000 IQD",
+    "color": "وردي",
+    "img": "logo.jpg"
+  }
+]

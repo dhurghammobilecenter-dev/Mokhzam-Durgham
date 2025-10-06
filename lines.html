@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- إضافة مكتبة أيقونات Font Icons -->
+<!-- Font Awesome أيقونات -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>مركز ضرغام للموبايل</title>
+<style>
+  /* إعدادات أساسية */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+   
+     /* اعدادات الجسم الرئيسيه */
+  body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  /* متجاوب */
+  @media (max-width: 768px) {
+  }
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+    /*  تنسيق راس الصفحه يبداء من هنا*/
+  /* الهيدر */
+/* الهيدر */
+/* ==========================
+   هيدر متجاوب بالكامل
+========================== */
+header {
+  position: relative;
+  width: 100%;
+  min-height: 18vh;
+  padding: 1vh 2vw;
+  background: linear-gradient(135deg, #1A1A2E, #4ECDC4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  font-size: 16px; /* أساس حجم الخط */
+}
+
+/* اسم الموقع أعلى الهيدر */
+header .header-title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem); /* حجم مرن حسب الشاشة */
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5vh 1vw;
+  border-radius: 8px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  margin-bottom: 1vh;
+  white-space: nowrap;
+}
+
+/* صورة اللوجو أسفل الاسم */
+header .logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1vh;
+}
+
+header .logo img {
+  width: clamp(50px, 8vw, 100px);
+  height: clamp(50px, 8vw, 100px);
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #ffd700;
+}
+
+/* صف العنوان + أيقونة الموقع أسفل الهيدر */
+header .header-bottom {
+  position: absolute;
+  bottom: 1vh;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5%;
+  flex-direction: row-reverse; /* أيقونة على اليمين والنص على اليسار */
+}
+
+/* أيقونة الموقع */
+header .map-icon {
+  font-size: clamp(18px, 2.5vw, 28px);
+  color: #ffd700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header .map-icon:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* العنوان التفصيلي */
+header .header-address {
+  font-size: clamp(0.75rem, 1.2vw, 1rem); /* حجم مرن للنص */
+  line-height: 1.3;
+  text-align: right;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+header .header-address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header .header-address a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ==========================
+   تحسين الشاشات المختلفة
+========================== */
+
+/* شاشات كبيرة جدًا */
+@media (min-width: 1440px) {
+  header .header-title {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  header .logo img {
+    width: clamp(80px, 6vw, 120px);
+    height: clamp(80px, 6vw, 120px);
+  }
+  header .header-address {
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+  }
+  header .map-icon {
+    font-size: clamp(24px, 2vw, 32px);
+  }
+}
+
+/* شاشات متوسطة */
+@media (max-width: 1024px) {
+  header .header-title {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+  }
+  header .logo img {
+    width: clamp(60px, 10vw, 80px);
+    height: clamp(60px, 10vw, 80px);
+  }
+  header .header-address {
+    font-size: clamp(0.75rem, 1vw, 0.9rem);
+    max-width: 65%;
+  }
+  header .map-icon {
+    font-size: clamp(18px, 2vw, 24px);
+  }
+}
+
+/* شاشات صغيرة */
+@media (max-width: 768px) {
+  header {
+    min-height: 20vh;
+    padding: 1.5vh 3vw;
+  }
+  header .header-title {
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+  }
+  header .logo img {
+    width: clamp(70px, 12vw, 85px);
+    height: clamp(70px, 12vw, 85px);
+  }
+  header .header-address {
+    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+    max-width: 70%;
+  }
+  header .map-icon {
+    font-size: clamp(16px, 3vw, 22px);
+  }
+}
+
+/* شاشات صغيرة جدًا (موبايل) */
+@media (max-width: 480px) {
+  header {
+    min-height: 22vh;
+    padding: 2vh 3vw;
+  }
+  header .header-title {
+    font-size: 1.6rem;
+    padding: 2px 5px;
+  }
+  header .logo img {
+    width: 85px;
+    height: 85px;
+  }
+  header .header-address {
+    font-size: 0.7rem;
+    max-width: 75%;
+  }
+  header .map-icon {
+    font-size: 18px;
+  }
+}
+
+/* القائمة اليمنى */
+/* ===== القائمة اليمنى ===== */
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background: linear-gradient(180deg, #222, #444);
+  color: #fff;
+  padding: 20px;
+  transform: translateX(100%); /* مخفية افتراضياً */
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-right.active { transform: translateX(0); }
+
+.sidebar-right h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #666;
+  padding-bottom: 10px;
+}
+
+/* ===== القائمة الداخلية مع سكرول ===== */
+.sidebar-right ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  flex-grow: 1;
+  overflow-y: auto; /* سكرول داخلي */
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* شكل السكروول في Chrome و Edge */
+.sidebar-right ul::-webkit-scrollbar {
+  width: 3px;
+}
+
+.sidebar-right ul::-webkit-scrollbar-thumb {
+  background-color: #ff9800;
+  border-radius: 3px;
+}
+
+.sidebar-right ul li {
+  margin: 15px 0;
+}
+
+.sidebar-right ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.sidebar-right ul li a:hover {
+  background: #ff9800;
+  transform: translateX(-5px);
+}
+
+.sidebar-right ul li a i {
+  font-size: 18px;
+  color: #ffd700;
+}
+
+/* ===== قسم التواصل مع المطور ===== */
+.dev-contact {
+  margin-top: auto; /* يضعه في أسفل القائمة */
+  padding-top: 15px;
+  text-align: center;
+  border-top: 1px solid #555;
+}
+
+.dev-contact button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #4caf50, #81c784); /* ألوان مريحة */
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  font-family: 'Arial', sans-serif;
+}
+
+.dev-contact button i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.dev-contact button span {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.dev-contact button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #43a047, #66bb6a);
+}
+
+/* ===== نافذة التواصل (Modal) ===== */
+.modal {
+  display: none; /* مخفية افتراضياً */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #222;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+  color: #fff;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  color: #ffb74d;
+  font-size: 18px;
+}
+
+.modal-content a {
+  display: block;
+  margin: 10px 0;
+  color: #ff9800;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.modal-content a:hover {
+  text-decoration: underline;
+  color: #ffd54f;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff9800;
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  color: #fff;
+}
+/* ============================
+   القائمه اليسرى
+============================ */
+/* ============================
+   القائمة اليسرى
+============================ */
+.sidebar-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: linear-gradient(180deg, #222, #444);
+  color: #fff;
+  padding: 20px;
+  transform: translateX(-100%); /* مخفية افتراضياً */
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-left.active { transform: translateX(0); }
+
+.sidebar-left .logo-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.sidebar-left .logo-section img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ff9800;
+}
+
+.sidebar-left .left-title {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+  color: #ff9800;
+}
+
+/* أيقونات التواصل */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.social-icons a {
+  font-size: 24px;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+/* ألوان مخصصة لكل أيقونة */
+.social-icons a .fa-whatsapp { color: #25D366; }
+/* أيقونة الهاتف */
+.social-icons a .fa-phone-alt {
+  color: #0A8754; /* اللون الجديد: أخضر غامق */
+}
+.social-icons a .fa-telegram { color: #0088cc; }
+.social-icons a .fa-instagram { color: #E4405F; }
+.social-icons a .fa-facebook { color: #1877F2; }
+.social-icons a .fa-tiktok { color: #000000; }
+
+/* روابط القائمة */
+.sidebar-left ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* شكل السكروول في Chrome و Edge */
+.sidebar-left ul::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-left ul::-webkit-scrollbar-thumb {
+  background-color: #ff9800;
+  border-radius: 4px;
+}
+
+.sidebar-left ul li {
+  margin: 12px 0;
+}
+
+.sidebar-left ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.sidebar-left ul li a:hover {
+  background: #ff9800;
+  transform: translateX(5px);
+}
+
+.sidebar-left ul li a i {
+  font-size: 18px;
+  color: #ffd700;
+}
+/* ============================
+   أزرار فتح القوائم
+============================ */
+.open-btn {
+  position: absolute;
+  top: 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1100;
+  font-size: 28px;
+  color: #fff;
+}
+
+.open-btn.right { right: 12px; }
+.open-btn.left { left: 12px; }
+  /*  نهايه تنسيق راس الصفحه*/
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* بدايه تنسيق الشريط الاخباري */
+/* حاوية الشريط */
+#news-bar-container {
+  width: 100%;
+  height: 6vh;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  direction: ltr; /* من اليسار لليمين */
+}
+
+/* الشريط نفسه */
+#news-bar {
+  display: flex;
+  white-space: nowrap;
+  animation: scrollNews 10s linear infinite; /* سرعة الشريط */
+}
+
+#news-bar span {
+  color: white;
+  font-size: 14px;
+  margin-left: 50px; /* مسافة بين الأخبار */
+}
+
+/* تحريك الأخبار من اليسار لليمين بشكل مستمر */
+@keyframes scrollNews {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+  /* نهايه تنسيق الشريط */
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* بدايه تنسيق القائمه الرئيسيه */
+
+
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f4f6f9; color: #333; }
+
+    .cards-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 2rem;}
+    .card { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); cursor: pointer; transition: 0.3s;}
+    .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2);}
+    .card h2 { margin: 0; color: #2980b9; font-size: 1.5rem;}
+    .card p { margin-top: 0.5rem; font-size: 1rem; opacity: 0.8;}
+
+    #numbers table { width: 90%; margin: 2rem auto; border-collapse: collapse; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+    #numbers th, #numbers td { padding: 1rem; border-bottom: 1px solid #ddd; text-align: center; }
+    #numbers th { background: #2980b9; color: white; }
+    #numbers tr:hover { background: #f1f1f1; }
+    .buy-btn { background: #27ae60; color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+    .buy-btn:hover { background: #219150; }
+
+    .offers { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 1rem; }
+    .offer-card { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+    .offer-card h2 { color: #27ae60; }
+    .offer-card p { margin: 0.5rem 0; }
+    .offer-card img { max-width: 100%; border-radius: 10px; margin-bottom: 10px; }
+
+    .soon-message { grid-column: 1 / -1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; min-height: 80vh; font-size: 2rem; font-weight: bold; color: #2e7d32; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); animation: fadeIn 1.5s ease-in-out; }
+    .soon-message span { font-size: 1.3rem; color: #555; margin-top: 0.5rem; animation: pulse 2s infinite; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.1); opacity: 0.7; } 100% { transform: scale(1); opacity: 1; } }
+
+    section { display: none; }
+    section.active { display: block; }
+    .offer-card p { white-space: pre-line; }
+
+    /* === النافذة المعدّلة (مركزية + أرقام صحيحة) === */
+    .reserve-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6); display: none;
+      justify-content: center; align-items: center; z-index: 999;
+    }
+    .reserve-popup {
+      background: #fff; padding: 2rem; border-radius: 15px; width: 92%; max-width: 420px;
+      text-align: center; box-shadow: 0 6px 15px rgba(0,0,0,0.2); animation: fadeIn 0.35s ease;
+    }
+    .reserve-popup h3 {
+      color: #2980b9; margin: 0 0 0.75rem 0; font-size: 1.25rem;
+      text-align: center;
+    }
+    .reserve-popup .selected-number {
+      direction: ltr;
+      unicode-bidi: isolate;
+      font-size: 1.6rem; color: #27ae60; font-weight: bold;
+      background: #e8f5e9; padding: 0.45rem 0.9rem; border-radius: 8px;
+      margin: 0.6rem auto; display: inline-block; text-align: center;
+      letter-spacing: 0.6px;
+    }
+    .reserve-popup p { color: #444; font-size: 0.96rem; margin-bottom: 1rem; line-height: 1.6; text-align: center; }
+
+    .reserve-actions { display: flex; gap: 10px; justify-content: center; align-items: center; margin-top: 0.6rem; }
+    .reserve-popup button {
+      background: #27ae60; color: white; border: none; padding: 0.68rem 1.2rem;
+      border-radius: 8px; cursor: pointer; font-size: 0.98rem;
+    }
+    .reserve-popup button:hover { background: #219150; }
+    .close-btn { background: #e74c3c; color: #fff; }
+
+    @media (max-width: 420px) {
+      .reserve-popup { padding: 1.2rem; }
+      .reserve-popup .selected-number { font-size: 1.25rem; padding: 0.4rem 0.8rem; }
+    }
+  
+
+/* نهاية تنسيق القائمه الرئيسيه */
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  
+</style>
+</head>
+<body>
+<!-- راس الصفحه  -->
+<header>
+  <!-- زر القائمة اليمنى -->
+  <button class="open-btn right" onclick="toggleSidebar('rightSidebar')">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- زر القائمة اليسرى -->
+  <button class="open-btn left" onclick="toggleSidebar('leftSidebar')">
+    <i class="fas fa-ellipsis-v"></i>
+  </button>
+
+
+  <!-- اسم الموقع في الأعلى -->
+  <h1 class="header-title">قسم الخطوط</h1>
+
+  <!-- اللوجو أسفل الاسم -->
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo">
+  </div>
+
+  <!-- صف العنوان + أيقونة الموقع أسفل الهيدر -->
+  <div class="header-bottom">
+    <!-- أيقونة الموقع على اليسار -->
+<a class="map-icon" 
+   href="https://goo.gl/maps/C3C8bzkjsFiyKPVr7" 
+   target="_blank" rel="noopener">
+   <i class="fas fa-map-marker-alt"></i> <!-- أيقونة جديدة -->
+</a>
+    <!-- العنوان على اليمين -->
+    <p class="header-address">
+      النجف - حي النداء <br>
+      شارع جامعة الكفيل <br>
+      قرب مدرسة شاكر الياسري<br> (المدرسة الوردية)
+    </p>
+  </div>
+
+
+  <!-- القائمة اليمنى -->
+  <div id="rightSidebar" class="sidebar-right">
+    <h2>القائمة</h2>
+    <ul>
+      <li><a href="index.html" target="_blank"><i class="fas fa-home"></i> القائمة الرئيسية</a></li>
+      <li><a href="mobiles.html" target="_blank"><i class="fas fa-mobile-alt"></i> قسم الموبايلات</a></li>
+      <li><a href="ipads.html" target="_blank"><i class="fas fa-tablet-alt"></i> قسم الايبادات</a></li>
+      <li><a href="lines.html" target="_blank"><i class="fas fa-sim-card"></i> قسم الخطوط</a></li>
+      <li><a href="repair.html" target="_blank"><i class="fas fa-tools"></i> قسم الصيانة</a></li>
+      <li><a href="accessories.html" target="_blank"><i class="fas fa-headphones"></i> قسم الاكسسوارات</a></li>
+      <li><a href="phones.html" target="_blank"><i class="fas fa-phone"></i> قسم الهيتفونات</a></li>
+      <li><a href="charging.html" target="_blank"><i class="fas fa-battery-full"></i> قسم الشحن</a></li>
+      <li><a href="products.html" target="_blank"><i class="fas fa-box"></i> قسم المنتجات المنوعة</a></li>
+      <li><a href="games.html" target="_blank"><i class="fas fa-gamepad"></i> قسم الألعاب</a></li>
+      <li><a href="storage.html" target="_blank"><i class="fas fa-sd-card"></i> قسم التخزين والذاكرة</a></li>
+      <li><a href="computers.html" target="_blank"><i class="fas fa-laptop"></i> قسم الحاسبات</a></li>
+      <li><a href="watches.html" target="_blank"><i class="fas fa-clock"></i> قسم الساعات</a></li>
+    </ul>
+
+    <!-- قسم التواصل مع المطور -->
+    <div class="dev-contact">
+      <button id="openDevModal">تواصل مع مطور الموقع<br><strong>أمير فاهم</strong></button>
+    </div>
+  </div>
+
+  <!-- نافذة التواصل -->
+  <div id="devModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeDevModal">&times;</span>
+      <h3>تواصل مع أمير فاهم</h3>
+      <a href="https://www.instagram.com/r7_v_7" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://t.me/r7_v_7" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+    </div>
+  </div>
+
+  <!-- القائمة اليسرى -->
+  <div id="leftSidebar" class="sidebar-left">
+    <div class="logo-section">
+      <img src="logo.jpg" alt="شعار الموقع">
+    </div>
+    <hr>
+
+    <h3 class="left-title">تواصل معنا</h3>
+    <hr>
+    <div class="social-icons">
+  <a href="https://wa.me/9647724455199" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+9647724455199"><i class="fas fa-phone-alt"></i></a>
+  <a href="https://t.me/Dargham_mobile_center" target="_blank"><i class="fab fa-telegram"></i></a>
+  <a href="https://www.instagram.com/dargham_center" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/share/1BJxfDZ4r1/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://tiktok.com/@dargham_mobile_center" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+    <hr>
+
+  <ul>
+  <!-- رابط البحث عن المنتج بالـ ID -->
+  <li>
+    <a href="search.html" target="_blank">
+      <i class="fas fa-search"></i> البحث عن المنتج بالـ ID
+    </a>
+  </li>
+  <hr>
+
+  <li><a href="payment.html" target="_blank"><i class="fas fa-credit-card"></i> الدفع الإلكتروني</a></li>
+  <hr>
+  <li><a href="installments.html" target="_blank"><i class="fas fa-hand-holding-usd"></i> الشراء بالتقسيط</a></li>
+  <hr>
+  <li><a href="privacy.html" target="_blank"><i class="fas fa-user-shield"></i> سياسة الخصوصية</a></li>
+  <hr>
+  <li><a href="about.html" target="_blank"><i class="fas fa-info-circle"></i> من نحن</a></li>
+  <hr>
+  <li><a href="terms.html" target="_blank"><i class="fas fa-file-contract"></i> اتفاقية المستخدم</a></li>
+  <hr>
+  <li><a href="contact.html" target="_blank"><i class="fas fa-phone-alt"></i> اتصل بنا</a></li>
+</ul>
+  </div>
+</header>
+<!-- نهاية الرئس  -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$  -->
+<!-- الشريط الاعلاني  -->
+<div id="news-bar-container">
+  <div id="news-bar"></div>
+</div>
+<!-- نهاية الشريط الاعلاني  -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$  -->
+<!-- ============================
+     HTML: القائمة الرئيسية
+============================ -->
+
+  <!-- الصفحة الرئيسية -->
+  <section id="home" class="active">
+    <div class="cards-container">
+      <div class="card" onclick="showPage('numbers')">
+        <h2>الأرقام المميزة</h2>
+        <p>عرض جميع الأرقام المميزة</p>
+      </div>
+      <div class="card" onclick="showPage('sim')">
+        <h2>خطوط الاتصال والإنترنت</h2>
+        <p>عرض الخطوط وباقات الإنترنت</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- صفحة الأرقام المميزة -->
+  <section id="numbers">
+    <table id="numbersTable">
+      <thead>
+        <tr>
+          <th>شراء</th>
+          <th>السعر</th>
+          <th>الرقم</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="numbersMessage"></div>
+  </section>
+
+  <!-- صفحة الخطوط والعروض -->
+  <section id="sim">
+  <!-- رسالة التنبيه -->
+  <div id="simNotice" style="background:#fff3cd; color:#856404; padding:1rem 1.5rem; border-radius:10px; margin:1rem auto; text-align:center; max-width: 600px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+    يتم شراء الخطوط <b>من داخل المركز</b> مع إحضار <b>المستمسكات الرسمية</b>: البطاقة الوطنية و بطاقة السكن أو البطاقة التموينية.
+  </div>
+
+  <main class="offers" id="offers"></main>
+  <div id="simMessage"></div>
+</section>
+
+  <!-- النافذة المنبثقة الجديدة -->
+  <div class="reserve-overlay" id="reserveOverlay" onclick="overlayClick(event)">
+    <div class="reserve-popup" id="reservePopup">
+      <h3>تفاصيل الرقم المختار</h3>
+      <div class="selected-number" id="reserveNumber" aria-live="polite"></div>
+      <p>يتم شراء الخطوط من داخل المركز.<br>
+      انقر على <b>حجز</b> ليتم حجز الرقم لك لمدة <b>ساعة واحدة</b>.<br>
+      يجب الحضور خلالها للمركز، وإلا يُلغى الطلب.</p>
+
+      <div class="reserve-actions">
+        <button onclick="confirmReserve()">حجز</button>
+        <button class="close-btn" onclick="closeReserve()">إغلاق</button>
+      </div>
+    </div>
+  </div>
+<!-- نهاية القائمه الرئيسيه وصفحاتها  -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$  -->
+
+<!-- بدايه اكواد الجافا سكربت  -->
+
+<script>
+  // ============================
+  // أكواد القوائم الجانبية
+  // ============================
+  function toggleSidebar(id) {
+    const sidebar = document.getElementById(id);
+
+    // إغلاق القائمة الأخرى
+    if (id === 'rightSidebar') {
+      document.getElementById('leftSidebar').classList.remove('active');
+    } else if (id === 'leftSidebar') {
+      document.getElementById('rightSidebar').classList.remove('active');
+    }
+
+    // تبديل حالة القائمة الحالية
+    sidebar.classList.toggle('active');
+  }
+
+  // ============================
+  // أكواد الشريط الإخباري
+  // ============================
+  const newsBar = document.getElementById("news-bar");
+
+  fetch('news.txt')
+    .then(response => response.text())
+    .then(data => {
+      const newsTexts = data.split("\n").filter(line => line.trim() !== "");
+      const allNews = [...newsTexts, ...newsTexts]; // لتكرار الأخبار
+
+      allNews.forEach(text => {
+        const span = document.createElement("span");
+        span.textContent = text;
+        newsBar.appendChild(span);
+      });
+    })
+    .catch(error => {
+      console.error("فشل تحميل النصوص:", error);
+      newsBar.textContent = "فشل تحميل النصوص الإخبارية";
+    });
+
+  // ============================
+  // التحكم بالصفحات الرئيسية
+  // ============================
+ 
+
+  const openModalBtn = document.getElementById('openDevModal');
+  const modal = document.getElementById('devModal');
+  const closeModalBtn = document.getElementById('closeDevModal');
+
+  openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // إغلاق عند الضغط خارج محتوى النافذة
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+// إغلاق القوائم الجانبية عند النقر خارجها
+window.addEventListener('click', function(e) {
+  const rightSidebar = document.getElementById('rightSidebar');
+  const leftSidebar = document.getElementById('leftSidebar');
+
+  if (!rightSidebar.contains(e.target) && !document.querySelector('.open-btn.right').contains(e.target)) {
+    rightSidebar.classList.remove('active');
+  }
+  if (!leftSidebar.contains(e.target) && !document.querySelector('.open-btn.left').contains(e.target)) {
+    leftSidebar.classList.remove('active');
+  }
+});
+
+
+
+
+
+
+
+    function showPage(page) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(page).classList.add("active");
+      if (page === "numbers") loadNumbers();
+      else if (page === "sim") loadSim();
+      history.pushState({ page: page }, "", "#" + page);
+    }
+
+    window.onpopstate = function(event) {
+      if (event.state && event.state.page) {
+        document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+        document.getElementById(event.state.page).classList.add("active");
+      } else showPage("home");
+    };
+
+    function loadNumbers() {
+      let tbody = document.querySelector("#numbersTable tbody");
+      let messageDiv = document.getElementById("numbersMessage");
+      if (tbody.innerHTML !== "" || messageDiv.innerHTML !== "") return;
+
+      fetch("numbersvib.json")
+        .then(res => res.ok ? res.json() : Promise.reject("ملف غير موجود"))
+        .then(data => {
+          if (!data.length) throw "فارغ";
+          data.forEach(item => {
+            tbody.innerHTML += `
+              <tr>
+                <td><button class="buy-btn" onclick="openReserve('${item.number}')">شراء</button></td>
+                <td>${item.price} IQD</td>
+                <td dir="ltr">${item.number}</td>
+              </tr>`;
+          });
+        })
+        .catch(err => {
+          messageDiv.innerHTML = `<div class="soon-message">قريباً سوف تتوفر المنتجات<span>Coming Soon</span></div>`;
+        });
+    }
+
+    function loadSim() {
+      let container = document.getElementById("offers");
+      let messageDiv = document.getElementById("simMessage");
+      if (container.innerHTML !== "" || messageDiv.innerHTML !== "") return;
+
+      fetch("numbers.json")
+        .then(res => res.ok ? res.json() : Promise.reject("ملف غير موجود"))
+        .then(data => {
+          if (!data.length) throw "فارغ";
+          data.forEach(offer => {
+            container.innerHTML += `
+              <div class="offer-card">
+                <img src="${offer.image}" alt="إعلان ${offer.title}">
+                <h2>${offer.title}</h2>
+                <p>السعر: ${offer.price} IQD</p>
+                <p>${offer.description}</p>
+              </div>`;
+          });
+        })
+        .catch(err => {
+          messageDiv.innerHTML = `<div class="soon-message">قريباً سوف تتوفر المنتجات<span>Coming Soon</span></div>`;
+        });
+    }
+
+    function overlayClick(e) {
+      const popup = document.getElementById("reservePopup");
+      if (!popup.contains(e.target)) closeReserve();
+    }
+
+    let selectedReserveNumber = "";
+
+    function openReserve(number) {
+      selectedReserveNumber = number;
+      const reserveNumberEl = document.getElementById("reserveNumber");
+      reserveNumberEl.textContent = number;
+      document.getElementById("reserveOverlay").style.display = "flex";
+    }
+
+    function closeReserve() {
+      document.getElementById("reserveOverlay").style.display = "none";
+    }
+
+    function confirmReserve() {
+      const phone = "9647815510509";
+      const message = `أريد حجز هذا الرقم: ${selectedReserveNumber}\nسأحضر خلال ساعة`;
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+      closeReserve();
+    }
+
+    showPage("home");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شحن الألعاب - مركز ضرغام للموبايل</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body { font-family:"Cairo", Tahoma, sans-serif; margin:0; padding:0; background:#eef3ff; color:#222; }
+.container { max-width:1000px; margin:30px auto; padding:20px; }
+h1,h2,h3 { text-align:center; color:#2d3eaa; margin:15px 0; }
+
+.buttons { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-bottom:25px; margin-right:50px;}
+.buttons button { background:linear-gradient(45deg,#4c6ef5,#2d3eaa); color:#fff; padding:14px 30px; border:none; border-radius:18px; cursor:pointer; font-size:18px; transition:0.3s; display:flex; align-items:center; gap:10px; }
+.buttons button:hover { transform:scale(1.05); }
+
+.notice { text-align:center; margin:20px 0; font-size:17px; }
+
+.games-list { display:flex; flex-direction:column; align-items:center; margin:20px 0; }
+.games-list div { background:#fff; width:80%; padding:12px 20px; border-radius:12px; margin:5px 0; box-shadow:0 5px 12px rgba(0,0,0,0.1); font-size:17px; display:flex; align-items:center; justify-content:flex-start; }
+.games-list div i { margin-left:10px; color:#4c6ef5; }
+
+table { width:100%; border-collapse:collapse; margin:20px 0; text-align:center; }
+th,td { border:1px solid #ccc; padding:10px; }
+th { background:#4c6ef5; color:#fff; }
+button.buy-btn { background:#25D366; color:#fff; padding:6px 12px; border:none; border-radius:6px; cursor:pointer; transition:0.3s; }
+button.buy-btn:hover { background:#128C7E; }
+
+.whatsapp-section { text-align:center; margin:30px 0; }
+.whatsapp-section a { display:inline-block; background:#25D366; color:#fff; padding:12px 25px; border-radius:12px; font-size:18px; text-decoration:none; transition:0.3s; }
+.whatsapp-section a:hover { background:#128C7E; transform:scale(1.05); }
+
+.back-note { text-align:center; font-size:15px; color:#555; margin-top:15px; }
+
+.modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:999; }
+.modal-content { background:#fff; padding:25px; border-radius:15px; width:90%; max-width:450px; box-shadow:0 5px 15px rgba(0,0,0,0.2); }
+.modal-content input, .modal-content select { display:block; width:100%; margin:10px 0; padding:8px; border:1px solid #ccc; border-radius:8px; font-size:16px; }
+.modal-content button { width:100%; padding:10px; font-size:16px; border:none; border-radius:10px; cursor:pointer; }
+.modal-content .confirm { background:#25D366; color:#fff; margin-top:5px; }
+.modal-content .cancel { background:#ccc; margin-top:5px; }
+
+@media(max-width:600px){
+  .buttons { flex-direction:column; }
+  .buttons button { width:80%; justify-content:center; }
+  .games-list div { width:90%; }
+  .whatsapp-section a { width:80%; display:block; margin:10px auto; }
+}
+
+.custom-warning-modal {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:10000;
+}
+
+.custom-warning-content {
+  background:#fff;
+  padding:20px 30px;
+  border-radius:15px;
+  text-align:center;
+  font-size:17px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.custom-warning-content button {
+  background:#4c6ef5;
+  color:#fff;
+  padding:8px 20px;
+  border:none;
+  border-radius:10px;
+  margin-top:15px;
+  cursor:pointer;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.custom-warning-content button:hover {
+  background:#2d3eaa;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🎮 شحن الألعاب</h1>
+
+  <p class="notice">نوفر شحن أشهر الألعاب مثل ببجي ولودو، وبقية الألعاب عند الطلب</p>
+
+  <!-- أزرار PUBG و Ludo -->
+  <div class="buttons">
+    <button onclick="showTable('pubg')"><i class="fas fa-gamepad"></i> ببجي موبايل</button>
+    <button onclick="showTable('ludo')"><i class="fas fa-gamepad"></i> لودو ستار</button>
+  </div>
+
+  <!-- قائمة الألعاب العشرة بشكل عمودي -->
+  <div class="games-list" id="other-games">
+    <div><i class="fas fa-gamepad"></i>بيس  </div>
+    <div><i class="fas fa-gamepad"></i>كلاش رويال</div>
+    <div><i class="fas fa-gamepad"></i>بليارد</div>
+    <div><i class="fas fa-gamepad"></i>طاولي</div>
+    <div><i class="fas fa-gamepad"></i>فري فاير</div>
+    <div><i class="fas fa-gamepad"></i>ماين كرافت</div>
+    <div><i class="fas fa-gamepad"></i>فورتنايت</div>
+    <div><i class="fas fa-gamepad"></i>أمونغ أس</div>
+    <div><i class="fas fa-gamepad"></i>كلاش أوف كلانز</div>
+    <div><i class="fas fa-gamepad"></i>8 بول بول</div>
+  </div>
+
+  <!-- قسم الواتساب -->
+  <div class="whatsapp-section">
+    <p>💡 يمكنك طلب شحن باقي الألعاب عبر واتساب:</p>
+    <a href="https://wa.me/9647815510509" target="_blank"><i class="fab fa-whatsapp"></i> تواصل معنا الآن</a>
+    
+  </div>
+
+  <!-- جدول ببجي -->
+  <div id="pubg-table" style="display:none;">
+    <h2>شحن شداد ببجي</h2>
+    <table id="pubgData">
+      <tr><th>شراء</th><th>السعر</th><th>عدد الشداد</th></tr>
+    </table>
+  </div>
+
+  <!-- جدول لودو الجواهر -->
+  <div id="ludo-gems-table" style="display:none;">
+    <h2>شحن جواهر لودو</h2>
+    <table id="ludoGemsData">
+      <tr><th>شراء</th><th>السعر</th><th>عدد الجواهر</th></tr>
+    </table>
+  </div>
+
+  <!-- جدول لودو العملات -->
+  <div id="ludo-coins-table" style="display:none;">
+    <h2>شحن عملات لودو</h2>
+    <table id="ludoCoinsData">
+      <tr><th>شراء</th><th>السعر</th><th>عدد العملات</th></tr>
+    </table>
+  </div>
+</div>
+
+<!-- نافذة الشراء المنبثقة -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="modal-title" style="font-weight:bold;"></span>
+    <input type="text" id="phone" placeholder="أدخل رقم هاتفك" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+    <input type="text" id="gameid" placeholder="ID اللعبة">
+    <input type="text" id="username" placeholder="اسمك داخل اللعبة">
+    <select id="paymentMethod">
+      <option value="زين كاش">زين كاش</option>
+      <option value="سوبر كي">سوبر كي</option>
+    </select>
+    <button class="confirm" onclick="confirmPurchase()">تأكيد الشراء</button>
+    <button class="cancel" onclick="closeModal()">إلغاء</button>
+  </div>
+</div>
+<!-- نافذة منبثقة جديدة للتحذير -->
+<div id="warningModal_XYZ" class="custom-warning-modal" style="display:none;">
+  <div class="custom-warning-content">
+    <p>يرجى ملء جميع الحقول المطلوبة!</p>
+    <button onclick="closeWarning_XYZ()">حسناً</button>
+  </div>
+</div>
+<script>
+// جلب بيانات الجداول من JSON خارجي
+let jsonData;
+fetch('chirg.json')
+  .then(response => response.json())
+  .then(data => {
+    jsonData = data;
+    populateTables();
+  });
+
+function populateTables(){
+  // ببجي
+  let pubgTable = document.getElementById('pubgData');
+  jsonData.pubg.forEach(item => {
+    let row = pubgTable.insertRow();
+    let btn = document.createElement('button');
+    btn.innerText = "شراء";
+    btn.className="buy-btn";
+    btn.onclick = ()=>openModal('ببجي موبايل',item.amount,item.price);
+    row.insertCell(0).appendChild(btn);
+    row.insertCell(1).innerText = item.price;
+    row.insertCell(2).innerText = item.amount;
+  });
+
+  // لودو جواهر
+  let ludoGemsTable = document.getElementById('ludoGemsData');
+  jsonData.ludo_gems.forEach(item => {
+    let row = ludoGemsTable.insertRow();
+    let btn = document.createElement('button');
+    btn.innerText = "شراء";
+    btn.className="buy-btn";
+    btn.onclick = ()=>openModal('لودو ستار - جوهرة',item.amount,item.price);
+    row.insertCell(0).appendChild(btn);
+    row.insertCell(1).innerText = item.price;
+    row.insertCell(2).innerText = item.amount;
+  });
+
+  // لودو عملات
+  let ludoCoinsTable = document.getElementById('ludoCoinsData');
+  jsonData.ludo_coins.forEach(item => {
+    let row = ludoCoinsTable.insertRow();
+    let btn = document.createElement('button');
+    btn.innerText = "شراء";
+    btn.className = "buy-btn";
+    btn.onclick = () => openModal('لودو ستار - عملات', item.amount, item.price);
+    row.insertCell(0).appendChild(btn);
+    row.insertCell(1).innerText = item.price;
+    row.insertCell(2).innerText = item.amount;
+  });
+}
+
+// عرض الجدول عند النقر على أزرار ببجي ولودو
+function showTable(game) {
+  // إخفاء كل شيء
+  document.getElementById('pubg-table').style.display = 'none';
+  document.getElementById('ludo-gems-table').style.display = 'none';
+  document.getElementById('ludo-coins-table').style.display = 'none';
+  document.getElementById('other-games').style.display = 'none';
+  document.querySelector('.notice').style.display = 'none';
+  document.querySelector('.buttons').style.display = 'none';
+  document.querySelector('.whatsapp-section').style.display = 'none';
+
+  if (game === 'pubg') document.getElementById('pubg-table').style.display = 'block';
+  if (game === 'ludo') {
+    document.getElementById('ludo-gems-table').style.display = 'block';
+    document.getElementById('ludo-coins-table').style.display = 'block';
+  }
+}
+
+// فتح نافذة الشراء
+function openModal(game, amount, price) {
+  document.getElementById('modal-title').innerText = `${game} - ${amount} (${price})`;
+  document.getElementById('modal').style.display = 'flex';
+}
+
+// غلق نافذة الشراء
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+
+// تأكيد الشراء وإرسال البيانات إلى واتساب
+function confirmPurchase() {
+  let title = document.getElementById('modal-title').innerText;
+  let phone = document.getElementById('phone').value;
+  let gameid = document.getElementById('gameid').value;
+  let username = document.getElementById('username').value;
+  let payment = document.getElementById('paymentMethod').value;
+
+if (!phone || !gameid || !username) {
+  showWarning_XYZ();
+  return;
+}
+
+  let waLink = `https://wa.me/9647815510509?text=${encodeURIComponent(
+    title + '\nرقم الهاتف: ' + phone + '\nID اللعبة: ' + gameid +
+    '\nالاسم داخل اللعبة: ' + username + '\nطريقة الدفع: ' + payment
+  )}`;
+
+  window.open(waLink, '_blank');
+  closeModal();
+}
+
+// التعامل مع زر الرجوع في الهاتف
+window.addEventListener('popstate', function(event) {
+  // عند الضغط على زر العودة، نعيد ظهور كل شيء
+  document.getElementById('pubg-table').style.display = 'none';
+  document.getElementById('ludo-gems-table').style.display = 'none';
+  document.getElementById('ludo-coins-table').style.display = 'none';
+  document.getElementById('other-games').style.display = 'flex';
+  document.querySelector('.notice').style.display = 'block';
+  document.querySelector('.buttons').style.display = 'flex';
+  document.querySelector('.whatsapp-section').style.display = 'block';
+});
+
+
+function showWarning_XYZ() {
+  document.getElementById('warningModal_XYZ').style.display = 'flex';
+}
+
+function closeWarning_XYZ() {
+  document.getElementById('warningModal_XYZ').style.display = 'none';
+}
+// تعديل دالة showTable لإضافة حالة التاريخ
+function showTable(game) {
+  // إخفاء كل شيء
+  document.getElementById('pubg-table').style.display = 'none';
+  document.getElementById('ludo-gems-table').style.display = 'none';
+  document.getElementById('ludo-coins-table').style.display = 'none';
+  document.getElementById('other-games').style.display = 'none';
+  document.querySelector('.notice').style.display = 'none';
+  document.querySelector('.buttons').style.display = 'none';
+  document.querySelector('.whatsapp-section').style.display = 'none';
+
+  if (game === 'pubg') document.getElementById('pubg-table').style.display = 'block';
+  if (game === 'ludo') {
+    document.getElementById('ludo-gems-table').style.display = 'block';
+    document.getElementById('ludo-coins-table').style.display = 'block';
+  }
+
+  // إضافة حالة جديدة للتاريخ حتى يعمل زر الرجوع
+  history.pushState({page: game}, "", "#" + game);
+}
+</script>
+
+</body>
+</html>

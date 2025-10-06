@@ -1,0 +1,82 @@
+[
+  {
+    "id": "watch001",
+    "name": "ساعة Apple Watch Series 9",
+    "desc": "ساعة ذكية من أبل بشاشة Retina، مقاومة للماء، تدعم قياس النبض",
+    "price": "1,000,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch002",
+    "name": "ساعة Samsung Galaxy Watch 6",
+    "desc": "ساعة ذكية بشاشة AMOLED، تتبع النشاط الصحي والنوم",
+    "price": "850,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch003",
+    "name": "ساعة Huawei Watch GT 4",
+    "desc": "ساعة ذكية ببطارية تدوم 14 يومًا، قياس معدل ضربات القلب والأكسجين",
+    "price": "700,000 IQD",
+    "color": "ذهبي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch004",
+    "name": "ساعة Amazfit GTR 4",
+    "desc": "ساعة ذكية أنيقة مع GPS دقيق و130 وضع رياضي",
+    "price": "500,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch005",
+    "name": "ساعة Fitbit Versa 4",
+    "desc": "ساعة لياقة بدنية متطورة، تتبع النوم والخطوات والتمارين",
+    "price": "600,000 IQD",
+    "color": "وردي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch006",
+    "name": "ساعة Garmin Forerunner 265",
+    "desc": "ساعة رياضية احترافية لتتبع الجري وGPS دقيق",
+    "price": "950,000 IQD",
+    "color": "أزرق",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch007",
+    "name": "ساعة Xiaomi Watch S1",
+    "desc": "ساعة ذكية بشاشة AMOLED وبطارية طويلة الأمد 12 يومًا",
+    "price": "400,000 IQD",
+    "color": "بني",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch008",
+    "name": "ساعة Haylou Solar Plus RT3",
+    "desc": "ساعة ذكية اقتصادية، مقاومة للماء وتدعم إشعارات الهاتف",
+    "price": "200,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch009",
+    "name": "ساعة Oppo Watch 4 Pro",
+    "desc": "ساعة ذكية فاخرة، تتبع صحي متكامل، شاشة AMOLED",
+    "price": "800,000 IQD",
+    "color": "رمادي فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "watch010",
+    "name": "ساعة Realme Watch 3",
+    "desc": "ساعة ذكية مع مكالمات Bluetooth، تتبع رياضي وصحي",
+    "price": "250,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  }
+]

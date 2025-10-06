@@ -1,0 +1,82 @@
+[
+  {
+    "id": "new_computer001",
+    "name": "لابتوب Dell XPS 15 جديد",
+    "desc": "لابتوب جديد بمعالج Intel i7، شاشة 15.6\" 4K، وذاكرة 16GB RAM",
+    "price": "2,500,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer002",
+    "name": "لابتوب MacBook Pro 14\" جديد",
+    "desc": "ماك بوك برو جديد بمعالج M2 Pro، شاشة Retina، 16GB RAM",
+    "price": "4,800,000 IQD",
+    "color": "رمادي فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer003",
+    "name": "لابتوب HP Spectre x360 جديد",
+    "desc": "لابتوب جديد قابل للتحويل 2 في 1، شاشة 13.3\" FHD، معالج Intel i7",
+    "price": "2,200,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer004",
+    "name": "لابتوب Lenovo ThinkPad X1 جديد",
+    "desc": "لابتوب جديد للأعمال، معالج Intel i7، 16GB RAM، 512GB SSD",
+    "price": "2,900,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer005",
+    "name": "لابتوب ASUS ROG Strix جديد",
+    "desc": "لابتوب ألعاب جديد، معالج Intel i9، بطاقة RTX 3070، RAM 32GB",
+    "price": "5,500,000 IQD",
+    "color": "أسود أحمر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer006",
+    "name": "لابتوب Acer Swift 3 جديد",
+    "desc": "لابتوب جديد رفيع وخفيف، معالج Ryzen 7، شاشة 14\" FHD",
+    "price": "1,800,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer007",
+    "name": "لابتوب Microsoft Surface Laptop 5 جديد",
+    "desc": "لابتوب جديد، شاشة PixelSense 13.5\"، معالج Intel i5، 16GB RAM",
+    "price": "2,400,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer008",
+    "name": "لابتوب MSI Prestige 14 جديد",
+    "desc": "لابتوب جديد للمصممين، معالج Intel i7، شاشة 14\" 2.8K، RAM 16GB",
+    "price": "3,000,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer009",
+    "name": "لابتوب Razer Blade 15 جديد",
+    "desc": "لابتوب ألعاب جديد، معالج Intel i7، بطاقة RTX 3080، RAM 32GB",
+    "price": "6,000,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "new_computer010",
+    "name": "لابتوب Apple MacBook Air M2 جديد",
+    "desc": "ماك بوك إير جديد، معالج M2، شاشة Retina 13.6\"، RAM 8GB",
+    "price": "3,200,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  }
+]

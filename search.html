@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البحث عن المنتج</title>
+  <style>
+    body {
+      font-family: "Cairo", sans-serif;
+      background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    .search-box {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 330px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .search-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 10px;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .result {
+      margin-top: 25px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 330px;
+      text-align: right;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      direction: rtl;
+      word-wrap: break-word;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .result img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 5px;
+    }
+
+    .reset-btn {
+      margin-top: 15px;
+      background: #28a745;
+    }
+
+    .reset-btn:hover {
+      background: #1e7e34;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="search-box" id="searchBox">
+    <h2>🔍 ابحث عن المنتج</h2>
+    <input type="text" id="productId" placeholder="أدخل رقم المنتج (ID)">
+    <button onclick="searchProduct()">بحث</button>
+  </div>
+
+  <div id="result" class="result" style="display:none;"></div>
+
+  <script>
+    async function searchProduct() {
+      const id = document.getElementById("productId").value.trim();
+      const resultDiv = document.getElementById("result");
+      resultDiv.style.display = "block";
+      resultDiv.innerHTML = "جارٍ البحث... 🔄";
+
+      if (!id) {
+        resultDiv.innerHTML = "❌ الرجاء إدخال رقم المنتج.";
+        return;
+      }
+
+      try {
+        // نقرأ ملفات الفهرس
+        const filesResponse = await fetch("files.json");
+        const jsonFiles = await filesResponse.json();
+
+        let found = false;
+
+        for (const file of jsonFiles) {
+          try {
+            const response = await fetch(file);
+            const data = await response.json();
+
+            const items = Array.isArray(data) ? data : [data];
+
+            for (const item of items) {
+              for (const key in item) {
+                if (key.toLowerCase() === "id" && item[key] === id) {
+                  found = true;
+                  resultDiv.innerHTML = `<h3>✅ تم العثور على المنتج</h3>`;
+                  for (const k in item) {
+                    if (k.toLowerCase() === "img" && item[k]) {
+                      resultDiv.innerHTML += `<p><strong>${k}:</strong><br><img src="${item[k]}" alt="صورة المنتج"></p>`;
+                    } else {
+                      resultDiv.innerHTML += `<p><strong>${k}:</strong> ${item[k]}</p>`;
+                    }
+                  }
+                  // زر إعادة البحث
+                  resultDiv.innerHTML += `<button class="reset-btn" onclick="resetSearch()">🔄 بحث عن منتج آخر</button>`;
+                  break;
+                }
+              }
+              if (found) break;
+            }
+            if (found) break;
+          } catch (e) {
+            console.error("خطأ في قراءة الملف:", file, e);
+          }
+        }
+
+        if (!found) {
+          resultDiv.innerHTML = "❌ لم يتم العثور على المنتج بهذا الـ ID في أي ملف.";
+        }
+
+      } catch (error) {
+        console.error(error);
+        resultDiv.innerHTML = "⚠️ حدث خطأ أثناء قراءة الملفات.";
+      }
+    }
+
+    function resetSearch() {
+      document.getElementById("productId").value = "";
+      document.getElementById("result").style.display = "none";
+      document.getElementById("searchBox").style.display = "block";
+    }
+  </script>
+</body>
+</html>

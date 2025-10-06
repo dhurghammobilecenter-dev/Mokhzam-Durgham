@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- إضافة مكتبة أيقونات Font Icons -->
+<!-- Font Awesome أيقونات -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>مركز ضرغام للموبايل</title>
+<style>
+  /* إعدادات أساسية */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+   
+     /* اعدادات الجسم الرئيسيه */
+  body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  /* متجاوب */
+  @media (max-width: 768px) {
+  }
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+    /*  تنسيق راس الصفحه يبداء من هنا*/
+  /* الهيدر */
+/* الهيدر */
+/* ==========================
+   هيدر متجاوب بالكامل
+========================== */
+header {
+  position: relative;
+  width: 100%;
+  min-height: 18vh;
+  padding: 1vh 2vw;
+  background: linear-gradient(135deg, #1A1A2E, #4ECDC4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  font-size: 16px; /* أساس حجم الخط */
+}
+
+/* اسم الموقع أعلى الهيدر */
+header .header-title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem); /* حجم مرن حسب الشاشة */
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5vh 1vw;
+  border-radius: 8px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  margin-bottom: 1vh;
+  white-space: nowrap;
+}
+
+/* صورة اللوجو أسفل الاسم */
+header .logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1vh;
+}
+
+header .logo img {
+  width: clamp(50px, 8vw, 100px);
+  height: clamp(50px, 8vw, 100px);
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #ffd700;
+}
+
+/* صف العنوان + أيقونة الموقع أسفل الهيدر */
+header .header-bottom {
+  position: absolute;
+  bottom: 1vh;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5%;
+  flex-direction: row-reverse; /* أيقونة على اليمين والنص على اليسار */
+}
+
+/* أيقونة الموقع */
+header .map-icon {
+  font-size: clamp(18px, 2.5vw, 28px);
+  color: #ffd700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header .map-icon:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* العنوان التفصيلي */
+header .header-address {
+  font-size: clamp(0.75rem, 1.2vw, 1rem); /* حجم مرن للنص */
+  line-height: 1.3;
+  text-align: right;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+header .header-address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header .header-address a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ==========================
+   تحسين الشاشات المختلفة
+========================== */
+
+/* شاشات كبيرة جدًا */
+@media (min-width: 1440px) {
+  header .header-title {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  header .logo img {
+    width: clamp(80px, 6vw, 120px);
+    height: clamp(80px, 6vw, 120px);
+  }
+  header .header-address {
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+  }
+  header .map-icon {
+    font-size: clamp(24px, 2vw, 32px);
+  }
+}
+
+/* شاشات متوسطة */
+@media (max-width: 1024px) {
+  header .header-title {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+  }
+  header .logo img {
+    width: clamp(60px, 10vw, 80px);
+    height: clamp(60px, 10vw, 80px);
+  }
+  header .header-address {
+    font-size: clamp(0.75rem, 1vw, 0.9rem);
+    max-width: 65%;
+  }
+  header .map-icon {
+    font-size: clamp(18px, 2vw, 24px);
+  }
+}
+
+/* شاشات صغيرة */
+@media (max-width: 768px) {
+  header {
+    min-height: 20vh;
+    padding: 1.5vh 3vw;
+  }
+  header .header-title {
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+  }
+  header .logo img {
+    width: clamp(70px, 12vw, 85px);
+    height: clamp(70px, 12vw, 85px);
+  }
+  header .header-address {
+    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+    max-width: 70%;
+  }
+  header .map-icon {
+    font-size: clamp(16px, 3vw, 22px);
+  }
+}
+
+/* شاشات صغيرة جدًا (موبايل) */
+@media (max-width: 480px) {
+  header {
+    min-height: 22vh;
+    padding: 2vh 3vw;
+  }
+  header .header-title {
+    font-size: 1.6rem;
+    padding: 2px 5px;
+  }
+  header .logo img {
+    width: 85px;
+    height: 85px;
+  }
+  header .header-address {
+    font-size: 0.7rem;
+    max-width: 75%;
+  }
+  header .map-icon {
+    font-size: 18px;
+  }
+}
+
+/* القائمة اليمنى */
+/* ===== القائمة اليمنى ===== */
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background: linear-gradient(180deg, #222, #444);
+  color: #fff;
+  padding: 20px;
+  transform: translateX(100%); /* مخفية افتراضياً */
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-right.active { transform: translateX(0); }
+
+.sidebar-right h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #666;
+  padding-bottom: 10px;
+}
+
+/* ===== القائمة الداخلية مع سكرول ===== */
+.sidebar-right ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  flex-grow: 1;
+  overflow-y: auto; /* سكرول داخلي */
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* شكل السكروول في Chrome و Edge */
+.sidebar-right ul::-webkit-scrollbar {
+  width: 3px;
+}
+
+.sidebar-right ul::-webkit-scrollbar-thumb {
+  background-color: #ff9800;
+  border-radius: 3px;
+}
+
+.sidebar-right ul li {
+  margin: 15px 0;
+}
+
+.sidebar-right ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.sidebar-right ul li a:hover {
+  background: #ff9800;
+  transform: translateX(-5px);
+}
+
+.sidebar-right ul li a i {
+  font-size: 18px;
+  color: #ffd700;
+}
+
+/* ===== قسم التواصل مع المطور ===== */
+.dev-contact {
+  margin-top: auto; /* يضعه في أسفل القائمة */
+  padding-top: 15px;
+  text-align: center;
+  border-top: 1px solid #555;
+}
+
+.dev-contact button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #4caf50, #81c784); /* ألوان مريحة */
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  font-family: 'Arial', sans-serif;
+}
+
+.dev-contact button i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.dev-contact button span {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.dev-contact button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #43a047, #66bb6a);
+}
+
+/* ===== نافذة التواصل (Modal) ===== */
+.modal {
+  display: none; /* مخفية افتراضياً */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #222;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+  color: #fff;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  color: #ffb74d;
+  font-size: 18px;
+}
+
+.modal-content a {
+  display: block;
+  margin: 10px 0;
+  color: #ff9800;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.modal-content a:hover {
+  text-decoration: underline;
+  color: #ffd54f;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff9800;
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  color: #fff;
+}
+/* ============================
+   القائمه اليسرى
+============================ */
+/* ============================
+   القائمة اليسرى
+============================ */
+.sidebar-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: linear-gradient(180deg, #222, #444);
+  color: #fff;
+  padding: 20px;
+  transform: translateX(-100%); /* مخفية افتراضياً */
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-left.active { transform: translateX(0); }
+
+.sidebar-left .logo-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.sidebar-left .logo-section img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ff9800;
+}
+
+.sidebar-left .left-title {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+  color: #ff9800;
+}
+
+/* أيقونات التواصل */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.social-icons a {
+  font-size: 24px;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+/* ألوان مخصصة لكل أيقونة */
+.social-icons a .fa-whatsapp { color: #25D366; }
+/* أيقونة الهاتف */
+.social-icons a .fa-phone-alt {
+  color: #0A8754; /* اللون الجديد: أخضر غامق */
+}
+.social-icons a .fa-telegram { color: #0088cc; }
+.social-icons a .fa-instagram { color: #E4405F; }
+.social-icons a .fa-facebook { color: #1877F2; }
+.social-icons a .fa-tiktok { color: #000000; }
+
+/* روابط القائمة */
+.sidebar-left ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* شكل السكروول في Chrome و Edge */
+.sidebar-left ul::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-left ul::-webkit-scrollbar-thumb {
+  background-color: #ff9800;
+  border-radius: 4px;
+}
+
+.sidebar-left ul li {
+  margin: 12px 0;
+}
+
+.sidebar-left ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.sidebar-left ul li a:hover {
+  background: #ff9800;
+  transform: translateX(5px);
+}
+
+.sidebar-left ul li a i {
+  font-size: 18px;
+  color: #ffd700;
+}
+/* ============================
+   أزرار فتح القوائم
+============================ */
+.open-btn {
+  position: absolute;
+  top: 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1100;
+  font-size: 28px;
+  color: #fff;
+}
+
+.open-btn.right { right: 12px; }
+.open-btn.left { left: 12px; }
+  /*  نهايه تنسيق راس الصفحه*/
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* بدايه تنسيق الشريط الاخباري */
+/* حاوية الشريط */
+#news-bar-container {
+  width: 100%;
+  height: 6vh;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  direction: ltr; /* من اليسار لليمين */
+}
+
+/* الشريط نفسه */
+#news-bar {
+  display: flex;
+  white-space: nowrap;
+  animation: scrollNews 10s linear infinite; /* سرعة الشريط */
+}
+
+#news-bar span {
+  color: white;
+  font-size: 14px;
+  margin-left: 50px; /* مسافة بين الأخبار */
+}
+
+/* تحريك الأخبار من اليسار لليمين بشكل مستمر */
+@keyframes scrollNews {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+  /* نهايه تنسيق الشريط */
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* بدايه تنسيق القائمه الرئيسيه */
+    .container {
+      text-align: center;
+      width: 100%;
+    }
+
+    /* الصفحة الرئيسية للأزرار */
+    .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      height: 74vh;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #4caf50, #81c784);
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 35px 50px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+      width: 85%;
+      max-width: 600px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, #43a047, #66bb6a);
+    } 
+    
+    .btn-with-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+      padding: 10px 40px;
+      width: 300px;
+      max-width: 95%;
+      font-size: 1.7rem;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .btn-with-image:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      background: linear-gradient(135deg, #1976d2, #42a5f5);
+    }
+
+    .btn-with-image img {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .btn-with-image:hover img {
+      transform: scale(1.1);
+    }
+
+    /* الأقسام */
+    .section {
+      display: none;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-y: auto;
+    }
+
+    .section.active {
+      display: flex;
+    }
+
+    /* صفحة المنتجات */
+    .products { 
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+      padding: 20px; 
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .product { 
+      background:#fff; 
+      border-radius:10px; 
+      padding:15px; 
+      box-shadow:0 2px 5px rgba(0,0,0,0.1); 
+      text-align:center; 
+    }
+
+    .product img { 
+      width: 100%; 
+      border-radius:10px; 
+      margin-bottom:10px; 
+    }
+
+    .product h3 { margin:10px 0; }
+    .product p { color:#555; font-size:14px; }
+
+    .product button { 
+      margin-top:10px; 
+      background:#28a745; 
+      color:#fff; 
+      border:none; 
+      padding:10px 15px; 
+      border-radius:5px; 
+      cursor:pointer; 
+    }
+
+    .product button:hover { background:#218838; }
+
+    /* رسالة "قريباً" */
+    .soon-message {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;    
+      text-align: center;     
+      width: 100%;            
+      min-height: 80vh;       
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2e7d32;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .soon-message span {
+      font-size: 1.3rem;
+      color: #555;
+      margin-top: 0.5rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%   { transform: scale(1); opacity: 1; }
+      50%  { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* نافذة الحجز */
+/* نافذة الحجز */
+/* نافذة الحجز المنبثقة */
+/* نافذة الحجز المنبثقة */
+#orderModal {
+  display: none; /* مخفية افتراضياً */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* خلفية شبه شفافة أخف من السابق */
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+#orderModal.active {
+  display: flex;
+}
+
+#orderModal .order-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 85%; /* أصغر قليلاً */
+  max-width: 450px; /* حجم أصغر جميل */
+  text-align: right;
+  max-height: 85vh; /* ارتفاع أقل قليلاً */
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+}
+
+#orderModal .order-modal-content h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #1976d2;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#orderModal .order-modal-content label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+#orderModal .order-modal-content input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+#orderModal .order-modal-content .submit-btn {
+  width: 100%;
+  padding: 10px 0;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+#orderModal .order-modal-content .submit-btn:hover {
+  background: linear-gradient(135deg, #43a047, #66bb6a);
+  transform: scale(1.02);
+}
+
+#orderModal .close-modal {
+  position: absolute;
+  top:10px;
+  left:10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+  transition: 0.3s;
+}
+
+#orderModal .close-modal:hover {
+  color: #000;
+}
+
+#orderModal .product-id {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #d32f2f;
+  margin-bottom: 12px;
+  text-align: center;
+}
+/* نهاية نافذة الحجز */
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: #fff;
+      font-weight: bold;
+      border:none;
+      border-radius:5px;
+      cursor: pointer;
+    }
+    .submit-btn:hover { background: #0056b3; }
+
+/* نافذة تنبيه أنيقة */
+/* نافذة تنبيه مركزية وجميلة */
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: linear-gradient(135deg, #4caf50, #81c784); /* ألوان مريحة */
+  color: #fff;
+  padding: 20px 35px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  z-index: 5000;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* إظهار الرسالة */
+.toast.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* إضافة حركة نبض لطيفة أثناء الظهور */
+.toast.show::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #fff;
+  animation: pulseBar 1s infinite;
+}
+
+@keyframes pulseBar {
+  0%, 100% { transform: scaleX(0.5); opacity: 0.5; }
+  50% { transform: scaleX(1); opacity: 1; }
+}
+
+</style>
+</head>
+<body>
+<!-- راس الصفحه  -->
+<header>
+  <!-- زر القائمة اليمنى -->
+  <button class="open-btn right" onclick="toggleSidebar('rightSidebar')">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- زر القائمة اليسرى -->
+  <button class="open-btn left" onclick="toggleSidebar('leftSidebar')">
+    <i class="fas fa-ellipsis-v"></i>
+  </button>
+
+
+  <!-- اسم الموقع في الأعلى -->
+  <h1 class="header-title"> قسم الأيبادات </h1>
+
+  <!-- اللوجو أسفل الاسم -->
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo">
+  </div>
+
+  <!-- صف العنوان + أيقونة الموقع أسفل الهيدر -->
+  <div class="header-bottom">
+    <!-- أيقونة الموقع على اليسار -->
+<a class="map-icon" 
+   href="https://goo.gl/maps/C3C8bzkjsFiyKPVr7" 
+   target="_blank" rel="noopener">
+   <i class="fas fa-map-marker-alt"></i> <!-- أيقونة جديدة -->
+</a>
+    <!-- العنوان على اليمين -->
+    <p class="header-address">
+      النجف - حي النداء <br>
+      شارع جامعة الكفيل <br>
+      قرب مدرسة شاكر الياسري<br> (المدرسة الوردية)
+    </p>
+  </div>
+
+
+  <!-- القائمة اليمنى -->
+  <div id="rightSidebar" class="sidebar-right">
+    <h2>القائمة</h2>
+    <ul>
+      <li><a href="index.html" target="_blank"><i class="fas fa-home"></i> القائمة الرئيسية</a></li>
+      <li><a href="mobiles.html" target="_blank"><i class="fas fa-mobile-alt"></i> قسم الموبايلات</a></li>
+      <li><a href="ipads.html" target="_blank"><i class="fas fa-tablet-alt"></i> قسم الايبادات</a></li>
+      <li><a href="lines.html" target="_blank"><i class="fas fa-sim-card"></i> قسم الخطوط</a></li>
+      <li><a href="repair.html" target="_blank"><i class="fas fa-tools"></i> قسم الصيانة</a></li>
+      <li><a href="accessories.html" target="_blank"><i class="fas fa-headphones"></i> قسم الاكسسوارات</a></li>
+      <li><a href="phones.html" target="_blank"><i class="fas fa-phone"></i> قسم الهيتفونات</a></li>
+      <li><a href="charging.html" target="_blank"><i class="fas fa-battery-full"></i> قسم الشحن</a></li>
+      <li><a href="products.html" target="_blank"><i class="fas fa-box"></i> قسم المنتجات المنوعة</a></li>
+      <li><a href="games.html" target="_blank"><i class="fas fa-gamepad"></i> قسم الألعاب</a></li>
+      <li><a href="storage.html" target="_blank"><i class="fas fa-sd-card"></i> قسم التخزين والذاكرة</a></li>
+      <li><a href="computers.html" target="_blank"><i class="fas fa-laptop"></i> قسم الحاسبات</a></li>
+      <li><a href="watches.html" target="_blank"><i class="fas fa-clock"></i> قسم الساعات</a></li>
+    </ul>
+
+    <!-- قسم التواصل مع المطور -->
+    <div class="dev-contact">
+      <button id="openDevModal">تواصل مع مطور الموقع<br><strong>أمير فاهم</strong></button>
+    </div>
+  </div>
+
+  <!-- نافذة التواصل -->
+  <div id="devModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeDevModal">&times;</span>
+      <h3>تواصل مع أمير فاهم</h3>
+      <a href="https://www.instagram.com/r7_v_7" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://t.me/r7_v_7" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+    </div>
+  </div>
+
+  <!-- القائمة اليسرى -->
+  <div id="leftSidebar" class="sidebar-left">
+    <div class="logo-section">
+      <img src="logo.jpg" alt="شعار الموقع">
+    </div>
+    <hr>
+
+    <h3 class="left-title">تواصل معنا</h3>
+    <hr>
+    <div class="social-icons">
+  <a href="https://wa.me/9647724455199" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+9647724455199"><i class="fas fa-phone-alt"></i></a>
+  <a href="https://t.me/Dargham_mobile_center" target="_blank"><i class="fab fa-telegram"></i></a>
+  <a href="https://www.instagram.com/dargham_center" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/share/1BJxfDZ4r1/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://tiktok.com/@dargham_mobile_center" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+    <hr>
+
+  <ul>
+  <!-- رابط البحث عن المنتج بالـ ID -->
+  <li>
+    <a href="search.html" target="_blank">
+      <i class="fas fa-search"></i> البحث عن المنتج بالـ ID
+    </a>
+  </li>
+  <hr>
+
+  <li><a href="payment.html" target="_blank"><i class="fas fa-credit-card"></i> الدفع الإلكتروني</a></li>
+  <hr>
+  <li><a href="installments.html" target="_blank"><i class="fas fa-hand-holding-usd"></i> الشراء بالتقسيط</a></li>
+  <hr>
+  <li><a href="privacy.html" target="_blank"><i class="fas fa-user-shield"></i> سياسة الخصوصية</a></li>
+  <hr>
+  <li><a href="about.html" target="_blank"><i class="fas fa-info-circle"></i> من نحن</a></li>
+  <hr>
+  <li><a href="terms.html" target="_blank"><i class="fas fa-file-contract"></i> اتفاقية المستخدم</a></li>
+  <hr>
+  <li><a href="contact.html" target="_blank"><i class="fas fa-phone-alt"></i> اتصل بنا</a></li>
+</ul>
+  </div>
+</header>
+<!-- نهاية الرئس  -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$  -->
+<!-- الشريط الاعلاني  -->
+<div id="news-bar-container">
+  <div id="news-bar"></div>
+</div>
+<!-- نهاية الشريط الاعلاني  -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$  -->
+<!-- ============================
+     HTML: القائمة الرئيسية
+============================ -->
+  <div class="container">
+    <!-- صفحة البداية -->
+    <div class="home" id="homePage">
+      <button class="btn btn-with-image" onclick="showSection('newDevices')">
+        <img src="logo.jpg" alt="New Devices">
+        الأيبادات الجديدة 
+      </button>
+
+      <button class="btn btn-with-image" onclick="showSection('usedDevices')">
+        <img src="logo.jpg" alt="Used Devices">
+        الأيبادات المستخدمة 
+      </button>
+    </div>
+
+    <!-- قسم الأجهزة الجديدة -->
+    <div class="section" id="newDevices">
+      <h1>الأيبادات الجديدة </h1>
+      <div class="products" id="productsNew"></div>
+    </div>
+
+    <!-- قسم الأجهزة المستخدمة -->
+    <div class="section" id="usedDevices">
+      <h1>الأيبادات المستخدمة </h1>
+      <div class="products" id="productsUsed"></div>
+    </div>
+  </div>
+
+  <!-- نافذة الحجز -->
+  <!-- نافذة الحجز -->
+<!-- نافذة الحجز -->
+<div id="orderModal" class="order-modal">
+  <div class="order-modal-content">
+    <span class="close-modal" onclick="closeModal()">×</span>
+    <h2>طلب المنتج</h2>
+    <p>معرّف المنتج: <span id="modalProductID"></span></p>
+
+<label for="phone">رقم الهاتف</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]*" inputmode="numeric" placeholder="أدخل رقم هاتفك">
+
+<label for="country">الدولة</label>
+<input type="text" id="country" name="country" placeholder="أدخل دولتك">
+
+<label for="province">المحافظة</label>
+<input type="text" id="province" name="province" placeholder="أدخل المحافظة">
+
+<label for="district">الحي</label>
+<input type="text" id="district" name="district" placeholder="أدخل اسم الحي">
+
+<label for="street">الشارع</label>
+<input type="text" id="street" name="street" placeholder="أدخل اسم الشارع">
+
+<label for="nearestPoint">أقرب نقطة</label>
+<input type="text" id="nearestPoint" name="nearestPoint" placeholder="أدخل أقرب نقطة دالة">
+
+    <button class="submit-btn" onclick="sendWhatsApp()">حجز</button>
+  </div>
+</div>
+  </div>
+<!-- رسالة التنبيه -->
+<div id="toast" class="toast">الرجاء تعبئة جميع الحقول!</div>
+<!-- نهاية القائمه الرئيسيه وصفحاتها  -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$  -->
+
+<!-- بدايه اكواد الجافا سكربت  -->
+
+<script>
+  // ============================
+  // أكواد القوائم الجانبية
+  // ============================
+  function toggleSidebar(id) {
+    const sidebar = document.getElementById(id);
+
+    // إغلاق القائمة الأخرى
+    if (id === 'rightSidebar') {
+      document.getElementById('leftSidebar').classList.remove('active');
+    } else if (id === 'leftSidebar') {
+      document.getElementById('rightSidebar').classList.remove('active');
+    }
+
+    // تبديل حالة القائمة الحالية
+    sidebar.classList.toggle('active');
+  }
+
+  // ============================
+  // أكواد الشريط الإخباري
+  // ============================
+  const newsBar = document.getElementById("news-bar");
+
+  fetch('news.txt')
+    .then(response => response.text())
+    .then(data => {
+      const newsTexts = data.split("\n").filter(line => line.trim() !== "");
+      const allNews = [...newsTexts, ...newsTexts]; // لتكرار الأخبار
+
+      allNews.forEach(text => {
+        const span = document.createElement("span");
+        span.textContent = text;
+        newsBar.appendChild(span);
+      });
+    })
+    .catch(error => {
+      console.error("فشل تحميل النصوص:", error);
+      newsBar.textContent = "فشل تحميل النصوص الإخبارية";
+    });
+
+  // ============================
+  // التحكم بالصفحات الرئيسية
+  // ============================
+ 
+
+  const openModalBtn = document.getElementById('openDevModal');
+  const modal = document.getElementById('devModal');
+  const closeModalBtn = document.getElementById('closeDevModal');
+
+  openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // إغلاق عند الضغط خارج محتوى النافذة
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+// إغلاق القوائم الجانبية عند النقر خارجها
+window.addEventListener('click', function(e) {
+  const rightSidebar = document.getElementById('rightSidebar');
+  const leftSidebar = document.getElementById('leftSidebar');
+
+  if (!rightSidebar.contains(e.target) && !document.querySelector('.open-btn.right').contains(e.target)) {
+    rightSidebar.classList.remove('active');
+  }
+  if (!leftSidebar.contains(e.target) && !document.querySelector('.open-btn.left').contains(e.target)) {
+    leftSidebar.classList.remove('active');
+  }
+});
+
+  
+    // ✅ التحكم في الصفحات
+
+    // التحكم في الصفحات
+    function showSection(sectionId) {
+      document.getElementById("homePage").style.display = "none";
+      document.querySelectorAll(".section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(sectionId).classList.add("active");
+
+      history.pushState({section: sectionId}, "", "#" + sectionId);
+
+      // تحميل المنتجات حسب القسم
+      if (sectionId === "newDevices") {
+        loadProducts("ipads-new.json", "productsNew");
+      } else if (sectionId === "usedDevices") {
+        loadProducts("ipads-user.json", "productsUsed");
+      }
+    }
+
+    // زر الرجوع
+    window.onpopstate = function(event) {
+      if (event.state && event.state.section) {
+        showSection(event.state.section);
+      } else {
+        document.querySelectorAll(".section").forEach(sec => sec.classList.remove("active"));
+        document.getElementById("homePage").style.display = "flex";
+      }
+    };
+
+    history.replaceState({home: true}, "", "#home");
+
+    // تحميل المنتجات
+    async function loadProducts(file, containerId) {
+      try {
+        let res = await fetch(file);
+        let products = await res.json();
+        let container = document.getElementById(containerId);
+        container.innerHTML = "";
+
+        products.forEach(p => {
+          container.innerHTML += `
+            <div class="product">
+              <img src="${p.img}" alt="${p.name}">
+              <h3>${p.name}</h3>
+              <p>${p.desc}</p>
+              <p><strong>السعر:</strong> ${p.price}</p>
+              <p><strong>اللون:</strong> ${p.color}</p>
+              <button onclick="openModal('${p.id}')">اطلب الآن</button>
+            </div>
+          `;
+        });
+      } catch (e) {
+        console.error("خطأ في تحميل المنتجات:", e);
+        let container = document.getElementById(containerId);
+        container.innerHTML = `
+          <div class="soon-message">
+            قريباً سوف تتوفر المنتجات
+            <span>Coming Soon</span>
+          </div>`;
+      }
+    }
+
+    // فتح نافذة الحجز
+// فتح نافذة الحجز
+function openModal(productId) {
+  const modal = document.getElementById("orderModal");
+  document.getElementById("modalProductID").textContent = productId;
+  modal.style.display = "flex";
+}
+
+// إغلاق نافذة الحجز
+function closeModal() {
+  const modal = document.getElementById("orderModal");
+  modal.style.display = "none";
+
+  // تنظيف الحقول
+  const fields = ["phone", "country", "province", "district", "street", "nearestPoint"];
+  fields.forEach(id => document.getElementById(id).value = "");
+}
+
+// إغلاق عند الضغط خارج النافذة
+window.addEventListener("click", function(e) {
+  const modal = document.getElementById("orderModal");
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+// إرسال البيانات للواتساب
+function sendWhatsApp() {
+  // جلب القيم
+  let productId = document.getElementById("modalProductID").textContent;
+  let phone = document.getElementById("phone").value.trim();
+  let country = document.getElementById("country").value.trim();
+  let province = document.getElementById("province").value.trim();
+  let district = document.getElementById("district").value.trim();
+  let street = document.getElementById("street").value.trim();
+  let nearestPoint = document.getElementById("nearestPoint").value.trim();
+
+  // التحقق من تعبئة جميع الحقول
+  if (!phone || !country || !province || !district || !street || !nearestPoint) {
+    showToast("الرجاء تعبئة جميع الحقول!");
+    return;
+  }
+
+  // إنشاء رسالة الواتساب
+  let message = `طلب منتج\nمعرف المنتج: ${productId}\nرقم الهاتف: ${phone}\nالدولة: ${country}\nالمحافظة: ${province}\nالحي: ${district}\nالشارع: ${street}\nأقرب نقطة: ${nearestPoint}`;
+
+  // فتح رابط واتساب
+  let whatsappURL = `https://wa.me/9647815510509?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL, "_blank");
+
+  // إغلاق النافذة وتنظيف الحقول
+  closeModal();
+}
+
+// دالة لعرض رسالة التنبيه
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  // إخفاء الرسالة بعد 3 ثواني
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 1300);
+}
+  
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "product001",
+    "name": "لابتوب Dell XPS 15",
+    "desc": "لابتوب جديد مع معالج Intel i7، شاشة 15.6\" 4K، RAM 16GB",
+    "price": "2,500,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product002",
+    "name": "هاتف iPhone 15 Pro",
+    "desc": "هاتف جديد مع معالج A17 Bionic، شاشة 6.1\" OLED، 128GB",
+    "price": "3,800,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product003",
+    "name": "سماعة لاسلكية AirPods Pro",
+    "desc": "سماعة لاسلكية مع إلغاء الضوضاء، بطارية 24 ساعة",
+    "price": "450,000 IQD",
+    "color": "أبيض",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product004",
+    "name": "هاتف Samsung Galaxy S23",
+    "desc": "هاتف مع معالج Snapdragon 8 Gen 2، شاشة 6.2\" AMOLED، 256GB",
+    "price": "3,500,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product005",
+    "name": "سماعة Bose QuietComfort 45",
+    "desc": "سماعة رأس لاسلكية مع إلغاء الضوضاء، بطارية 24 ساعة",
+    "price": "650,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product006",
+    "name": "لابتوب MacBook Pro 14\"",
+    "desc": "ماك بوك برو جديد، معالج M2 Pro، شاشة Retina، RAM 16GB",
+    "price": "4,800,000 IQD",
+    "color": "رمادي فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product007",
+    "name": "سماعة JBL Flip 6",
+    "desc": "سماعة بلوتوث مقاومة للماء، صوت قوي وعالي الجودة",
+    "price": "200,000 IQD",
+    "color": "أزرق",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product008",
+    "name": "هاتف Xiaomi 13 Pro",
+    "desc": "هاتف مع شاشة 6.73\" AMOLED، كاميرا 50MP، 12GB RAM",
+    "price": "2,900,000 IQD",
+    "color": "أزرق",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product009",
+    "name": "لابتوب ASUS ROG Strix",
+    "desc": "لابتوب ألعاب مع معالج Intel i9، بطاقة RTX 3070، RAM 32GB",
+    "price": "5,500,000 IQD",
+    "color": "أسود أحمر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product010",
+    "name": "سماعة Beats Studio3 Wireless",
+    "desc": "سماعة لاسلكية لعشاق الموسيقى، بطارية 22 ساعة",
+    "price": "550,000 IQD",
+    "color": "أحمر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product011",
+    "name": "هاتف OnePlus 11",
+    "desc": "هاتف مع معالج Snapdragon 8 Gen 2، شاشة 6.7\" AMOLED، 256GB",
+    "price": "2,700,000 IQD",
+    "color": "أسود أحمر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product012",
+    "name": "جهاز لوحي iPad Air 2024",
+    "desc": "تابلت جديد، شاشة 10.9\" Liquid Retina، معالج M1، RAM 8GB",
+    "price": "2,400,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product013",
+    "name": "سماعة Skullcandy Crusher Evo",
+    "desc": "سماعة لاسلكية مع قوة باس ممتازة، بطارية 40 ساعة",
+    "price": "480,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product014",
+    "name": "هاتف Google Pixel 8",
+    "desc": "هاتف مع معالج Google Tensor G3، شاشة 6.2\" AMOLED، 128GB",
+    "price": "2,600,000 IQD",
+    "color": "أبيض",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product015",
+    "name": "سماعة Anker Soundcore Life Q35",
+    "desc": "سماعة لاسلكية مع إلغاء الضوضاء وبطارية 40 ساعة",
+    "price": "280,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product016",
+    "name": "لابتوب Lenovo ThinkPad X1",
+    "desc": "لابتوب جديد للأعمال، معالج Intel i7، 16GB RAM، 512GB SSD",
+    "price": "2,900,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product017",
+    "name": "هاتف Oppo Find X6 Pro",
+    "desc": "هاتف مع شاشة 6.82\" AMOLED، كاميرا 50MP، 12GB RAM",
+    "price": "3,200,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product018",
+    "name": "سماعة Razer Opus",
+    "desc": "سماعة ألعاب لاسلكية مع إلغاء الضوضاء وجودة صوت ممتازة",
+    "price": "500,000 IQD",
+    "color": "أخضر أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product019",
+    "name": "لابتوب Acer Swift 3",
+    "desc": "لابتوب رفيع وخفيف، معالج Ryzen 7، شاشة 14\" FHD",
+    "price": "1,800,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "product020",
+    "name": "سماعة Logitech G435",
+    "desc": "سماعة ألعاب خفيفة لاسلكية، صوت واضح ومريح للارتداء الطويل",
+    "price": "320,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  }
+]

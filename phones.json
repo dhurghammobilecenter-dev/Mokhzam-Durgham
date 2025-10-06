@@ -1,0 +1,82 @@
+[
+  {
+    "id": "headphone001",
+    "name": "سماعة لاسلكية AirPods Pro",
+    "desc": "سماعة لاسلكية مع تقنية إلغاء الضوضاء، بطارية تدوم 24 ساعة",
+    "price": "450,000 IQD",
+    "color": "أبيض",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone002",
+    "name": "سماعة Sony WH-1000XM5",
+    "desc": "سماعة رأس لاسلكية عالية الجودة مع إلغاء الضوضاء النشط، بطارية 30 ساعة",
+    "price": "600,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone003",
+    "name": "سماعة Bose QuietComfort 45",
+    "desc": "سماعة لاسلكية مريحة مع صوت ممتاز وإلغاء الضوضاء",
+    "price": "650,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone004",
+    "name": "سماعة JBL Tune 510BT",
+    "desc": "سماعة لاسلكية اقتصادية مع بطارية تدوم 40 ساعة وصوت واضح",
+    "price": "200,000 IQD",
+    "color": "أزرق",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone005",
+    "name": "سماعة Beats Studio3 Wireless",
+    "desc": "سماعة لاسلكية ممتازة لعشاق الموسيقى، بطارية 22 ساعة",
+    "price": "550,000 IQD",
+    "color": "أحمر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone006",
+    "name": "سماعة Skullcandy Crusher Evo",
+    "desc": "سماعة لاسلكية مع قوة باس ممتازة، بطارية 40 ساعة",
+    "price": "480,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone007",
+    "name": "سماعة Samsung Galaxy Buds2 Pro",
+    "desc": "سماعة لاسلكية صغيرة ومريحة مع جودة صوت عالية",
+    "price": "350,000 IQD",
+    "color": "أرجواني",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone008",
+    "name": "سماعة Anker Soundcore Life Q35",
+    "desc": "سماعة رأس لاسلكية مع إلغاء الضوضاء وبطارية 40 ساعة",
+    "price": "280,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone009",
+    "name": "سماعة Razer Opus",
+    "desc": "سماعة ألعاب لاسلكية مع إلغاء الضوضاء وجودة صوت استثنائية",
+    "price": "500,000 IQD",
+    "color": "أخضر أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "headphone010",
+    "name": "سماعة Logitech G435",
+    "desc": "سماعة ألعاب خفيفة لاسلكية مع صوت واضح ومريح للارتداء الطويل",
+    "price": "320,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  }
+]

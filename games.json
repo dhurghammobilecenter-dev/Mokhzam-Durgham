@@ -1,0 +1,82 @@
+[
+  {
+    "id": "game001",
+    "name": "لعبة FIFA 24",
+    "desc": "لعبة كرة القدم الشهيرة على أجهزة PlayStation وXbox وPC",
+    "price": "50,000 IQD",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game002",
+    "name": "لعبة Call of Duty: Modern Warfare II",
+    "desc": "لعبة إطلاق نار تكتيكية على أجهزة PlayStation وXbox وPC",
+    "price": "60,000 IQD",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game003",
+    "name": "لعبة Grand Theft Auto V",
+    "desc": "لعبة عالم مفتوح وأكشن على أجهزة PlayStation وXbox وPC",
+    "price": "55,000 IQD",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game004",
+    "name": "لعبة Minecraft",
+    "desc": "لعبة بناء واستكشاف على أجهزة PlayStation وXbox وPC وSwitch",
+    "price": "30,000 IQD",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game005",
+    "name": "لعبة The Legend of Zelda: Tears of the Kingdom",
+    "desc": "لعبة مغامرات على جهاز Nintendo Switch",
+    "price": "65,000 IQD",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game006",
+    "name": "لعبة God of War Ragnarok",
+    "desc": "لعبة أكشن ومغامرة على جهاز PlayStation",
+    "price": "70,000 IQD",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game007",
+    "name": "لعبة Fortnite",
+    "desc": "لعبة باتل رويال على أجهزة متعددة مثل PS، Xbox، PC، Switch",
+    "price": "0 IQD (مجانية مع مشتريات داخل اللعبة)",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game008",
+    "name": "لعبة Apex Legends",
+    "desc": "لعبة إطلاق نار باتل رويال على أجهزة متعددة",
+    "price": "0 IQD (مجانية مع مشتريات داخل اللعبة)",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game009",
+    "name": "لعبة Resident Evil Village",
+    "desc": "لعبة رعب وبقاء على أجهزة PlayStation وXbox وPC",
+    "price": "60,000 IQD",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "game010",
+    "name": "لعبة Horizon Forbidden West",
+    "desc": "لعبة مغامرة وأكشن على جهاز PlayStation",
+    "price": "65,000 IQD",
+    "color": "متعدد الألوان",
+    "img": "logo.jpg"
+  }
+]

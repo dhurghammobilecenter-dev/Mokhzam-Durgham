@@ -1,0 +1,17 @@
+{
+  "fake": [
+    {"amount": "100 متابع", "price": "5000 IQD"},
+    {"amount": "200 متابع", "price": "9500 IQD"},
+    {"amount": "500 متابع", "price": "23000 IQD"}
+  ],
+  "real": [
+    {"amount": "50 متابع", "price": "3000 IQD"},
+    {"amount": "100 متابع", "price": "5800 IQD"},
+    {"amount": "200 متابع", "price": "11000 IQD"}
+  ],
+  "promotion": [
+    {"amount": "500 متابع", "price": "2500 IQD"},
+    {"amount": "1000 متابع", "price": "4800 IQD"},
+    {"amount": "2000 متابع", "price": "9500 IQD"}
+  ]
+}

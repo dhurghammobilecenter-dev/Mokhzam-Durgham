@@ -1,0 +1,82 @@
+[
+  {
+    "id": "used_ipad001",
+    "name": "iPad Pro 12.9\" مستعمل",
+    "desc": "ايباد برو مستعمل بحالة جيدة، مع شاشة Liquid Retina وكاميرا جيدة",
+    "price": "1,900,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad002",
+    "name": "iPad Air 5 مستعمل",
+    "desc": "ايباد اير مستعمل بحالة ممتازة، يدعم Apple Pencil",
+    "price": "1,400,000 IQD",
+    "color": "أزرق سماوي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad003",
+    "name": "iPad Mini 6 مستعمل",
+    "desc": "ايباد ميني مستعمل بحالة جيدة، صغير الحجم وسهل الحمل",
+    "price": "900,000 IQD",
+    "color": "بنفسجي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad004",
+    "name": "iPad 10.2\" 2023 مستعمل",
+    "desc": "ايباد 10.2 بحالة جيدة، يدعم لوحة المفاتيح",
+    "price": "750,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad005",
+    "name": "iPad Pro 11\" مستعمل",
+    "desc": "ايباد برو 11 بحالة جيدة، شاشة Liquid Retina وكاميرا ممتازة",
+    "price": "1,800,000 IQD",
+    "color": "رمادي فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad006",
+    "name": "iPad Air 4 مستعمل",
+    "desc": "ايباد اير 4 بحالة جيدة، معالج A14 Bionic",
+    "price": "1,200,000 IQD",
+    "color": "أخضر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad007",
+    "name": "iPad Mini 5 مستعمل",
+    "desc": "ايباد ميني 5 مستعمل، شاشة Retina وحالة جيدة",
+    "price": "650,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad008",
+    "name": "iPad 9.7\" مستعمل",
+    "desc": "ايباد 9.7 مستعمل بحالة مقبولة، مع كاميرا خلفية جيدة",
+    "price": "500,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad009",
+    "name": "iPad Pro 12.9\" M2 مستعمل",
+    "desc": "ايباد برو بحالة جيدة، معالج M2 وكاميرات محسّنة",
+    "price": "2,100,000 IQD",
+    "color": "رمادي داكن",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_ipad010",
+    "name": "iPad Air 5 256GB مستعمل",
+    "desc": "ايباد اير 5 بسعة 256 جيجا مستعمل، يدعم Apple Pencil",
+    "price": "1,600,000 IQD",
+    "color": "وردي",
+    "img": "logo.jpg"
+  }
+]

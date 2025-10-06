@@ -1,0 +1,82 @@
+[
+  {
+    "id": "storage001",
+    "name": "قرص SSD Samsung 1TB",
+    "desc": "قرص صلب داخلي سريع من نوع SSD، سرعة قراءة وكتابة عالية",
+    "price": "450,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage002",
+    "name": "قرص HDD Seagate 2TB",
+    "desc": "قرص صلب داخلي للتخزين بسعة كبيرة، أداء ممتاز للملفات الكبيرة",
+    "price": "200,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage003",
+    "name": "فلاش USB 64GB SanDisk",
+    "desc": "ذاكرة محمولة صغيرة وسريعة لتخزين ونقل الملفات بسهولة",
+    "price": "25,000 IQD",
+    "color": "أحمر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage004",
+    "name": "بطاقة SD 128GB Samsung",
+    "desc": "بطاقة تخزين للكاميرات والأجهزة المحمولة، سرعة عالية",
+    "price": "35,000 IQD",
+    "color": "أزرق",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage005",
+    "name": "قرص SSD WD Blue 500GB",
+    "desc": "قرص SSD داخلي لتسريع الجهاز وتحسين الأداء، قراءة وكتابة سريعة",
+    "price": "220,000 IQD",
+    "color": "أزرق",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage006",
+    "name": "قرص HDD Toshiba 1TB",
+    "desc": "قرص صلب داخلي موثوق لتخزين الملفات الكبيرة والألعاب",
+    "price": "180,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage007",
+    "name": "فلاش USB 128GB Kingston",
+    "desc": "ذاكرة محمولة بسعة كبيرة وسرعة عالية للنقل والتخزين",
+    "price": "40,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage008",
+    "name": "بطاقة microSD 256GB SanDisk",
+    "desc": "بطاقة تخزين للأجهزة المحمولة والكاميرات، أداء ممتاز",
+    "price": "60,000 IQD",
+    "color": "أحمر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage009",
+    "name": "قرص SSD Crucial 2TB",
+    "desc": "قرص SSD داخلي بسعة كبيرة للألعاب والملفات الثقيلة",
+    "price": "900,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "storage010",
+    "name": "RAM Corsair Vengeance 16GB",
+    "desc": "ذاكرة وصول عشوائي عالية الأداء لتسريع الحاسوب",
+    "price": "250,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  }
+]

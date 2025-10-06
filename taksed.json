@@ -1,0 +1,51 @@
+[
+  {
+    "id": "P001",
+    "name": "آيفون 15 برو",
+    "category": "موبايل",
+    "price_cash": 120000,
+    "price_installment": 130000,
+    "months": 6,
+    "down_payment": 30000,
+    "monthly_payment": 16666,
+    "details": "شاشة 6.7 إنش، 256GB، كاميرا 48MP",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "P002",
+    "name": "حاسوب محمول Dell XPS 15",
+    "category": "حاسوب",
+    "price_cash": 200000,
+    "price_installment": 220000,
+    "months": 12,
+    "down_payment": 50000,
+    "monthly_payment": 14166,
+    "details": "RAM 16GB، SSD 512GB، شاشة 15.6 إنش",
+   "img": "logo.jpg"
+  },
+  {
+    "id": "P003",
+    "name": "آيباد برو 12.9",
+    "category": "آيباد",
+    "price_cash": 150000,
+    "price_installment": 165000,
+    "months": 6,
+    "down_payment": 40000,
+    "monthly_payment": 20833,
+    "details": "شاشة 12.9 إنش، 256GB، Wi-Fi + Cellular",
+   "img": "logo.jpg"
+  },
+  {
+    "id": "P004",
+    "name": "ساعة أبل سيريس 9",
+    "category": "ساعة",
+    "img": "logo.jpg",
+    "price_cash": 80000,
+    "price_installment": 90000,
+    "months": 3,
+    "down_payment": 30000,
+    "monthly_payment": 20000,
+    "details": "GPS، مقاومة للماء، بطارية 18 ساعة",
+     "img": "logo.jpg"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "used_computer001",
+    "name": "لابتوب Dell Inspiron مستعمل",
+    "desc": "لابتوب مستعمل بحالة جيدة، معالج Intel i5، RAM 8GB، 256GB SSD",
+    "price": "1,200,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer002",
+    "name": "لابتوب HP Pavilion مستعمل",
+    "desc": "لابتوب مستعمل، معالج Intel i5، RAM 8GB، شاشة 15.6\"",
+    "price": "1,100,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer003",
+    "name": "لابتوب Lenovo IdeaPad مستعمل",
+    "desc": "لابتوب مستعمل بحالة ممتازة، معالج Ryzen 5، RAM 8GB، 512GB SSD",
+    "price": "1,250,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer004",
+    "name": "لابتوب ASUS VivoBook مستعمل",
+    "desc": "لابتوب مستعمل، معالج Intel i5، RAM 8GB، شاشة 14\" FHD",
+    "price": "1,150,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer005",
+    "name": "لابتوب Acer Aspire مستعمل",
+    "desc": "لابتوب مستعمل، معالج Intel i3، RAM 4GB، 256GB SSD",
+    "price": "900,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer006",
+    "name": "لابتوب MSI GF63 مستعمل",
+    "desc": "لابتوب ألعاب مستعمل بحالة جيدة، معالج Intel i5، بطاقة GTX 1050",
+    "price": "1,800,000 IQD",
+    "color": "أسود أحمر",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer007",
+    "name": "لابتوب Apple MacBook Air مستعمل",
+    "desc": "ماك بوك إير مستعمل، معالج Intel i5، RAM 8GB، شاشة Retina 13.3\"",
+    "price": "2,500,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer008",
+    "name": "لابتوب Dell XPS مستعمل",
+    "desc": "لابتوب مستعمل بحالة جيدة، معالج Intel i7، RAM 16GB، شاشة 15.6\"",
+    "price": "3,000,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer009",
+    "name": "لابتوب HP EliteBook مستعمل",
+    "desc": "لابتوب مستعمل بحالة ممتازة للأعمال، معالج Intel i7، RAM 16GB",
+    "price": "2,800,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "used_computer010",
+    "name": "لابتوب Lenovo ThinkPad مستعمل",
+    "desc": "لابتوب مستعمل للأعمال، معالج Intel i5، RAM 8GB، 256GB SSD",
+    "price": "1,400,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  }
+]

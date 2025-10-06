@@ -1,0 +1,82 @@
+[
+  {
+    "id": "accessory001",
+    "name": "سماعات لاسلكية AirPods Pro",
+    "desc": "سماعات لاسلكية بتقنية إلغاء الضوضاء، بطارية تدوم 24 ساعة",
+    "price": "450,000 IQD",
+    "color": "أبيض",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory002",
+    "name": "ماوس لاسلكي Logitech MX Master 3",
+    "desc": "ماوس احترافي، دقة عالية، بطارية قابلة للشحن",
+    "price": "150,000 IQD",
+    "color": "رمادي داكن",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory003",
+    "name": "كيبورد ميكانيكي Razer BlackWidow",
+    "desc": "كيبورد ميكانيكي للألعاب، أضواء RGB، مفاتيح سريعة",
+    "price": "200,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory004",
+    "name": "شاحن سريع Anker 65W",
+    "desc": "شاحن سريع لجميع الأجهزة، مخرج USB-C و USB-A",
+    "price": "75,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory005",
+    "name": "حافظة جلدية iPhone 15",
+    "desc": "حافظة جلدية أصلية، حماية عالية، تصميم أنيق",
+    "price": "90,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory006",
+    "name": "كابل شحن سريع USB-C",
+    "desc": "كابل مقاوم للتلف، يدعم الشحن السريع ونقل البيانات",
+    "price": "25,000 IQD",
+    "color": "أزرق",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory007",
+    "name": "سوار ذكي Xiaomi Mi Band 8",
+    "desc": "سوار للياقة البدنية، شاشة AMOLED، مقاوم للماء",
+    "price": "120,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory008",
+    "name": "حامل جوال للسيارة",
+    "desc": "حامل ثابت للجوال مع دوران 360 درجة",
+    "price": "40,000 IQD",
+    "color": "أسود",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory009",
+    "name": "مايكروفون USB Blue Yeti",
+    "desc": "مايكروفون احترافي للتسجيل والبودكاست، جودة صوت عالية",
+    "price": "350,000 IQD",
+    "color": "فضي",
+    "img": "logo.jpg"
+  },
+  {
+    "id": "accessory010",
+    "name": "سماعة رأس Bose QuietComfort 45",
+    "desc": "سماعات رأس لاسلكية مع إلغاء الضوضاء، بطارية تدوم 24 ساعة",
+    "price": "650,000 IQD",
+    "color": "رمادي",
+    "img": "logo.jpg"
+  }
+]
